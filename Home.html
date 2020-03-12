@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!-- css file -->
+    <link rel="stylesheet" href="master.css">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="responsive.dataTables.min.css">
+
+    <!-- js file -->
+    <script src="button.js"></script>
+
+    <!-- jqurey file-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.3/css/dataTables.responsive.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.js"></script>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>티모태 - 마스크 기부 서비스</title>
+</head>
+<body data-spy="scroll" data-target=".navbar">
+    <header>
+        <div class="container">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#"><img src="img/timotae brandlogo.png" width="30" height="30"> Timotae</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item nav-layout">
+                      <a class="nav-link" href="#Introduce">서비스 소개</a>
+                    </li>
+                    <li class="nav-item nav-layout">
+                      <a class="nav-link" href="#Cherish">기부 하기</a>
+                    </li>
+                    <li class="nav-item nav-layout">
+                      <a class="nav-link" href="#Current">기부 현황</a>
+                    </li>
+                    <li class="nav-item nav-layout">
+                      <a class="nav-link" href="#Programmers">개발자 소개</a>
+                    </li>
+                  </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section style="margin-bottom:-35px;">
+        <div class="container section-1">
+          <div class="well">
+            <div class="description">
+                <div class="title-box" >
+                    <h2 class="description-title" id="title"></h2>
+
+                    <h5 class="description-sub">마스크 기부 서비스</h5>
+                </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container section-2" id="Introduce">
+          <div class="page-header" style="padding-top:60px;padding-bottom:0px;">
+            <h3>What Is &quot;TIMOTAE&quot;?</h3>
+          </div>
+            <br>
+            <p style=" border: 2px solid gray;">
+              <div class="row align-items-center">
+                <div class="col-md-3"><img src="img/timotae brandlogo.png" width="100%" height="100%"></div>
+                <div class="col-md-9"><p><strong>&lt;티모태&gt;</strong> 는 우리나라 속담인 &quot;티끌 모아 태산&quot;의 줄임말로,<br>시민들과 함께 하는 <mark>마스크 도네이션 서비스</mark>플랫폼입니다.</p></div>
+              </div>
+              <br><br>
+              <div class="row align-items-center" id="service">
+                <!-- 마스크 부족을 나타내는 사진 / 우리 활동사진 업데이트-->
+                <div class="col-md-9"><p><strong>&lt;티끌 모아 태산&gt;</strong><br>
+                  2019년 12월, 중국 우한에서 처음 발생한 코로나 19는 전세계로 빠르게 퍼졌으며,<br>
+                  특히 한국 내 확진자 수는 중국 다음으로 높은 수를 기록하고 있습니다.<br>
+                  코로나19 바이러스의 전파경로는 감염자의 체액(콧물, 가래 등)을 통해 전염됩니다.<br>
+                  이를 막기 위한 효과적인 방법 중 하나가 마스크 착용이지만,<br>
+                  현재 급격히 확산 중인 코로나19로 인해 마스크의 공급이 원할하지 않아 마스크가 부족한 모습을 보았습니다.<br>
+                  이에 따라,<br>
+                  티모태는 <mark>여러 사람들의 1장, 2장 소량의 마스크를 모아 관련 기관에 전달</mark>하는 마스크 도네이션 서비스를 제공합니다. </p></div>
+                  <div class="col-md-3"><img src="img/timotae brandlogo.png" width="100%" height="auto"></div>
+              </div>
+                <br><br>
+                <div class="row align-items-center">
+                  <!-- 개수 캡쳐화면 / 배급상황 캡쳐화면 -->
+                  <div class="col-md-3"><img src="img/투명성.jpeg" width="100%" height="auto"></div>
+                  <div class="col-md-9"><p><strong>&lt;기부의 투명성&gt;</strong><br>
+                    기부 시스템에서 가장 중요한 것은 <mark>&quot;투명성&quot;</mark>입니다.<br>
+                    <br>
+                    기부 물품과 배급 상황은 홈패이지 내의 <a href="#Current">기부 현황</a> 페이지에서 매일 18시에 업데이트됩니다.<br>
+                    만약 더 자세히 알고 싶은 부분, 또는 의문점이 생기는 부분에 대해서는 아래의 메일로 문의드리면 신속하게 답변해드리겠습니다.
+                    <br><br>E-mail : timotae2020@gmail.com
+
+                    </p></div>
+                </div>
+                <br>
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container section-3" id="Cherish" >
+          <div class="page-header"style="padding-top:60px;">
+            <h3> 기부 하기 </h3>
+          </div>
+            <p style=" border-top: 2px solid gray;">
+              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/One.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/Two.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/Three.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/Four.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/Five.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+              <button type="button" id="form" class="btn btn-success" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSctc_oTQoZSNFeHWhYS-M8ISWFwBxef-oScAlGoxyzXpGOWDA/viewform')" style="margin-top:20px;">기부 신청하기</button>
+
+            </p>
+        </div>
+    </section>
+
+    <section>
+      <div class="container section-4" id="Current" style="padding-bottom:30px;">
+      <div class="page-header" style="padding-top:60px">
+        <h3> 기부 현황 </h3>
+        <div class="js-clock">
+          현재 서버 시간은 <a class="clock">00:00 </a> 입니다. 기부 현황은 매일 18시마다 업데이트됩니다.
+          <div id="total" style="float:right; ">전체 대형 : @@, 전체 소형 : @@</div>
+        </div>
+      </div>
+        <p style=" border: 1px solid gray;">
+          <!--
+          <nav id="navbar-example2" class="navbar-light bg-light">
+            <a class="navbar-brand" href="#">서울시 마스크 기부 현황 </a>
+            <ul class="nav nav-pills">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">구 찾기</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#NW">노원구</a>
+                  <a class="dropdown-item" href="#DJ">동작구</a>
+                  <a class="dropdown-item" href="#YC">양천구</a>
+                  <a class="dropdown-item" href="#YDP">영등포구</a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <div data-spy="scroll" data-target="#navbar-example2" data-offset="0"></div>
+          -->
+
+          <table class="table table-striped" id="table" style="width: 100%;">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">구</th>
+                <th scope="col">장소</th>
+                <th scope="col">개수</th>
+                <th scope="col">수혜처</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td id="NW">노원구</td>
+                <td>광운대학교 정문</td>
+                <td><div id="big">대형 : @@장</div> <div>소형 : @@장</div></td>
+                <td>대구 동신병원 / 대구 @@병원</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>노원구</td>
+                <td>광운대학교 후문</td>
+                <td><div id="big">대형 : @@장</div> <div>소형 : @@장</div></td>
+                <td>대구 사랑의집</td>
+              </tr>
+              <!-- <tr>
+                <th scope="row">2</th>
+                <td>@@구</td>
+                <td>@@@@@@@@@@@</td>
+                <td><div id="big">대형 : @@장</div> <div>소형 : @@장</div></td>
+              </tr> -->
+             
+            </tbody>
+          </table>
+        </p>
+      </div>
+    </section>
+    <section>
+      <div class="container section-5" id="Current" style="padding-bottom:30px;">
+        <div class="page-header">
+          <h3> 도움을 주신 분들 </h3>
+        </div>
+          <p style=" border: 1px solid gray;">
+            <div class="row align-items-center"></div>
+              <div class="col-md-11" id="Contributor" style=" overflow:scroll; width:100%; height:330px;border: 4px solid rgb(222,244,254);margin-top:20px;">
+                <div style="width:80px;text-align:center;margin-top:5px;"><mark>3월 16일</mark></div>
+                <div id="list">
+                  <ul>
+                    <li>20장 : 송승호 님 </li>
+                    <li>20장 : 정지민 님 </li>
+                    <li>20장 : 성명근 님 </li>
+                    
+                  </ul>
+                </div>
+                <div id="date"><mark>3월 17일</mark></div>
+                <div id="list">
+                  <ul>
+                    <li>20장 : 광운대학교 소프트웨어학부 일동 </li>
+                    <li>20장 : @@아파트 주민 일동 </li>
+                    <li>20장 : 글샘 소모임 일동 </li>
+                  </ul>
+                </div>
+                <!-- <div id="date"><mark>3월 @@일</mark></div>
+                <div id="list">
+                  <ul>
+                    <li>20장 : @@@@@ </li>
+                    <li>20장 : @@@@@ </li>
+                    <li>20장 : @@@@@ </li>
+                  </ul>
+                </div> -->
+                
+              </div>
+              <br>
+              <div id="Greeting"><mark>시민분들의 많은 참여 감사드립니다!</mark></div>
+          </p>
+      </div>
+  </section>
+
+    <section> <!-- 개발진 일동 사진 있으면 좋을듯 -->
+      <div class="container section-6" id="Programmers" style="padding-bottom:30px;">
+        <div class="page-header">
+          <h3> <strong>&lt;개발자 소개&gt;</strong> </h3>
+        </div>
+          <div>
+          <p>
+            안녕하세요.<br>저희는 광운대학교 소프트웨어학부 18, 19학번 8명으로 이루어진 대학생 예비 개발자들입니다.<br><br>
+                <strong>&lt;Member List&gt;</strong>
+                <ul>
+                    <li>대표 : 광운대학교 소프트웨어학부 19. 이지우</li>
+                    <li>부대표 : 광운대학교 소프트웨어학부 19. 송승호</li>
+                </ul>
+                &quot;개발팀&quot;
+                <ul>
+                    <li>광운대학교 소프트웨어학부 18. 김진구</li>
+                    <li>광운대학교 소프트웨어학부 19. 손창민</li>
+                    <li>광운대학교 소프트웨어학부 19. 나부겸</li>
+                </ul>
+                &quot;디자인팀&quot;
+                <ul>
+                    <li>광운대학교 소프트웨어학부 19. 방다연</li>
+                    <li>광운대학교 소프트웨어학부 19. 김민철</li>
+                </ul>
+                &quot;홍보팀&quot;
+                <ul>
+                    <li>광운대학교 소프트웨어학부 19. 성명근</li>
+                </ul>
+          </p>
+
+          <p style="margin-top:50px;">
+            <strong>&lt;개발자에게 한 마디!&gt;</strong>
+            <p>
+              안녕하세요.<br>
+              &lt;Timotae&gt; 팀의 부대표 송승호입니다.<br><br>
+              이번 코로나19 사태로 인한 마스크 기부의 필요성을 깨닫고 난 후,<br>
+              웹사이트 개발에 대해 열심히 공부하여 만들었으나, 아직 부족한 점들이 많은 페이지입니다.<br>
+              사이트에서 <mark>불편한 점이나 개선되어야 할 점들, 또는 개발적 측면에서 알려주고 싶은 점</mark>들이 있으면 언제든지 귀 기울여 배우겠습니다.<br><br>
+              다시 한 번, 저희 사이트를 방문해주셔서 감사드립니다.<br><br>
+              마스크 한 장이라는 티끌이 태산이 되어, 이 위기를 함께 극복할 수 있길 소망합니다.<br>감사합니다.<br>
+            </p>
+            <ul style="margin-top:50px;">
+              <li> Github 사이트 : <a href="https://github.com/SeungHo0422/Timotae" target = "_blank" title = "TIMOTAE Github 사이트 바로가기">https://github.com/SeungHo0422/Timotae</a></li>
+              <li> E-mail : songseungho9258@gmail.com </li>
+            </ul>
+          </p>
+          </div>
+         
+      </div>
+  </section>
+
+    
+    <footer class="page-footer font-small blue pt-1" style="background: rgb(247,248,249)!important;text-align:center;padding-top:5px!important;">
+        <div class="row"style="text-align:center; background: rgb(247,248,249)!important;display:inline-block;width:100%;">
+            <p class="bold" style="color: rgb(24,24,24);">
+            <br>이 홈페이지는 광운대학교 소프트웨어학부 "티모태" 팀이 제작하였습니다.
+            </p>
+            <p class="normal" style="color: rgb(24,24,24); text-align: center;">
+            e-mail: timotae2020@gmail.com
+            <br>Instagram : t_mo_tae
+           
+            <br>
+        </p>
+        </div>    
+    </footer>
+    <script src="clock.js"></script>
+    <script type="text/javascript" src="datetable.js"></script>
+</body>
+</html>
